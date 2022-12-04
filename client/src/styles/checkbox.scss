@@ -1,0 +1,28 @@
+.containerCheckbox{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    
+    input[type='radio'] {
+        box-sizing: border-box;
+        appearance: none;
+        background: white;
+        outline: 2px solid grey;
+        border: 3px solid white;
+        width: 30px;
+        height: 30px;
+      }
+      
+      input[type='radio']:checked {
+        background: grey;
+      }
+    }
+}

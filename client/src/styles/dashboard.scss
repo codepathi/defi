@@ -1,0 +1,114 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .address{
+        display: flex;
+        align-items: center;
+        text-decoration: underline;
+        .circle{
+            width: 5px;
+            height: 5px;
+            background-color: green;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+    }
+    .display{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        
+        overflow: hidden;
+        .value{
+            flex: 2;
+            margin-top: 10px;
+            border: 1px solid #3D996B;
+            padding: 10px 10px;
+            color: #3D996B;
+            animation: tra 0.2s 1;
+            
+
+            .rateLoan{
+                width: 100%;
+                margin-top: 10px;
+                background-color: orange;
+                padding: 5px 0 5px 4px;
+            }
+        }
+
+
+        .slider{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .sliderCircle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            background-color: lightgrey;
+            border-radius: 50%;
+            color: grey;
+            cursor: pointer;
+            }
+            .sliderCircle:hover{
+                background-color: rgb(231, 231, 231);
+            }
+        }
+    }
+    .dashboardDesign{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 20px 0;
+        @media (max-width: 900px) {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+        }
+
+        .blockTime{
+            flex: 1;
+            .blockTimeCircle{
+                width: 100px;
+                height: 100px;
+                border: 30px solid lightgrey;
+                border-top: 30px solid purple;
+                border-radius: 50%;
+                animation: spin 15s linear infinite;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                text-align: center;
+            }
+            
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+              }
+            
+              .number{
+                animation: spinNumber 15s linear infinite;
+
+                @keyframes spinNumber {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(-360deg); }
+                  }
+              }
+
+              
+        }
+
+        p{
+            flex: 1;
+        }
+        
+    }
+
+}

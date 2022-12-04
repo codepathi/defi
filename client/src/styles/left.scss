@@ -1,0 +1,76 @@
+.left{
+    margin-left: 3%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .borrow{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h3{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .icons{
+                width: 25px;
+                height: 25px;
+                opacity: 0.85;
+            }
+        }
+        button{
+            background-color: #3D996B;
+            border: 1px #5FC08F solid;
+            // border-radius: 10px;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: white;
+            border: 1px #071b42 solid;
+            color: #071b42;
+            font-weight: 500;
+        }
+    }
+
+    .metamaskConnect{
+        background-color: #3D996B;
+        border: 1px solid #3D996B;
+        height: 60vh;
+        cursor: pointer;
+    }
+    .metamaskConnect:hover{
+        background-color: white;
+        border: 1px solid #3D996B;
+    }
+
+    .stake{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h3{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .icons{
+                width: 25px;
+                height: 35px;
+                opacity: 0.85;
+            }
+        }
+        button{
+            background-color: #FFA500;
+            border: 1px #FFA500 solid;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: white;
+            border: 1px #071b42 solid;
+            color: #071b42;
+            font-weight: 500;
+        }
+    }
+}
